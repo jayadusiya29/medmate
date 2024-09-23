@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background-image.jpg'); /* Add the image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* App Name Style */
+        .app-name {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0d0f7d; /* Adjust color as needed */
+            margin-top: 20px;
+        }
+
+        .watermark {
+          position: fixed;
+            width: 100vw;
+            height: 100vh; 
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0.1;
+        }
+
+        .watermark img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .option {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .option img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- App Name -->
+        <div class="app-name">
+            MedMate
+        </div>
+
+        <h1>Login Portal</h1>
+
+        <!-- Options Section -->
+        <div class="options">
+            <!-- Patients Option -->
+            <a href="patients.html" class="option">
+                <img src="patient.png" alt="Patients Icon"> <!-- Add Patients icon URL -->
+                <span>Patients</span>
+            </a>
+
+            <!-- Hospital Option -->
+            <a href="hospital.html" class="option">
+                <img src="hospital.png" alt="Hospital Icon"> <!-- Add Hospital icon URL -->
+                <span>Hospital</span>
+            </a>
+
+            <!-- Doctors Option -->
+            <a href="doctors.html" class="option">
+                <img src="doctor.png" alt="Doctors Icon"> <!-- Add Doctors icon URL -->
+                <span>Doctors</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hospital Watermark -->
+    <div class="watermark">
+        <img src="watermark.png" alt="Hospital Watermark" width="150px"> <!-- Add watermark image URL -->
+    </div>
+
+</body>
+</html>

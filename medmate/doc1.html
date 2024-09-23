@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4b7bec;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        
+        .header img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        .header .welcome-text {
+            display: flex;
+            align-items: center;
+        }
+        .header .welcome-text h2 {
+            margin-left: 10px;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+        }
+        .header .notification {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .search-bar {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+        }
+        .appointment {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .appointments {
+            
+            width: 500px;
+            height: 200px;
+            background-color:  #4b7bec;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .appointments h2 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .appointment-list {
+            list-style-type: none;
+            padding: 10px;
+            
+        }
+
+        .appointment-list li {
+            background-color: #f4f4f4;
+            flex:1;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="Home page">
+            <img src="user image.png" alt="Profile Picture">
+            <h2>Welcome <br>[Doctor Name] </h2>
+        </div>
+        <div class="notification">&#128276;</div>
+       
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+<div class="appointment">
+    <!-- Upcoming Appointments Section -->
+    <div class="appointments">
+        <h2>Upcoming Appointments</h2>
+        <ul class="appointment-list">
+            <li> Priya Shrivastava </li>
+            <li> Mukesh Mishra </li>
+            <li> Ritu Sharma </li>
+        </ul>
+    </div>
+    <div class="appointments">
+        <h2>List Of Appointments</h2> 
+        <ul class="appointment-list">
+            <li> Completed Appointments </li>
+            <li> Resheudled Appointments </li>
+            <li> Cancelled Appointments </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
